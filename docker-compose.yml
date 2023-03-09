@@ -17,7 +17,7 @@ services:
       - -c
       - |
         rethinkdb create --initial-password  ${APP_PASSWORD}
-        rethinkdb --bind all --port-offset=1
+        rethinkdb --bind all
     volumes:
       - rethinkdb_data:/data
 
